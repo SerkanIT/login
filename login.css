@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #483285, #6e45b7, #845ec2);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(./img.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    font-size: 1em;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: white;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 0.8em;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: white;
+}
+
+/* New CSS to hide icon when input is focused or valid */
+.input-box input:valid ~ .icon,
+.input-box input:focus ~ .icon {
+    display: none;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.remember-forgot a {
+    color: white;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background: #6e45b7;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #483285;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.lock-alt {
+    color: white;
+}
+
+.user {
+    margin-left: 15px;
+}
+
+.pass {
+    margin-left: 15px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    flex: 1;  
+    padding: 10px 20px 10px 40px;  
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    font-size: 1em;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 10px;
+    color: white;
+    z-index: 1;
+}
